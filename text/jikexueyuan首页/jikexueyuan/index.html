@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>极客学院</title>
+	<link rel="stylesheet" type="text/css" href="./css/styless.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+<!--导航-->
+<div class="ue-bar">
+	<div class="ue-bar-warp">
+		<div class="ue-bar-logo">
+			<a href="#">
+				<img src="./images/logo.png" width="100" alt="极客学院" title="极客学院"></a>
+		</div>
+		<div class="ue-bar-nav">
+			<ul>
+				<li >
+					<a href="http://www.jikexueyuan.com">首页</a>
+
+				</li>
+				<li class="ue-bar-nav2">
+					职业学院 <i class="arrow-icon" id="arrow-icon1" ></i>
+
+				</li>
+
+				<li class="ue-bar-nav3" style="color: rgb(53, 181, 88);">
+					会员课程 <i class="arrow-icon" id="arrow-icon2" style="border-color: rgb(53, 181, 88);"></i>
+
+				</li>
+				<li class="ue-bar-nav4">
+					极客社区
+					<i class="arrow-icon" id="arrow-icon3" ></i>
+				</li>
+			</ul>
+		</div>
+		<div class="icon-box">
+			<span class="search-icon" id="search-btn"></span>
+			<span class="app-icon loginlist relative" id="appicon">
+				<div class="submenu">
+					<i class="top-icon"></i>
+					<img src="./images/heade-rwm.png"></div>
+			</span>
+			<span class="relative loginlist logged" id="loginlist">
+				<a href="http://my.jikexueyuan.com/setting/user/">
+					<img src="./images/default.gif" id="userpoto"></a>
+				<i id="uservip-icon" class="year-icon"></i>
+			</span>
+		</div>
+	</div>
+</div>
+<!--导航显示菜单-->
+<div class="submenu school-list">
+	<h3>前端学院</h3>
+	<a href="http://www.jikexueyuan.com/zhiye/web">
+		<i class="web-icon"></i>
+		Web 前端工程师
+	</a>
+	<h3>后端学院</h3>
+	<a href="http://www.jikexueyuan.com/zhiye/python">
+		<i class="python-icon"></i>
+		Python Web工程师
+	</a>
+	<a href="http://www.jikexueyuan.com/zhiye/go">
+		<i class="go-icon"></i>
+		Go语言工程师
+	</a>
+
+	<h3>移动学院</h3>
+	<a href="http://www.jikexueyuan.com/zhiye/ios">
+		<i class="ios-icon"></i>
+		iOS工程师
+	</a>
+
+</div>
+<div class="submenuvip-lesson3">
+	<a href="http://wenda.jikexueyuan.com">
+		<i class="jswd-icon"></i>
+		技术问答
+		<span>20000+</span>
+	</a>
+	<a href="http://wiki.jikexueyuan.com">
+		<i class="wiki-icon"></i>
+		Wiki
+		<span>351</span>
+	</a>
+	<a href="http://qun.jikexueyuan.com">
+		<i class="sq-icon"></i>
+		社群
+		<span>7000+</span>
+	</a>
+	<a href="http://download.jikexueyuan.com">
+		<i class="zygx-icon"></i>
+		资源下载
+		<span>3000+</span>
+	</a>
+</div>
+<div style="background: #fff;width: 983px;margin: auto;">
+<div class="adminMenuWarp">
+	<ul class="adminmenu">
+		<li class="menu">
+			<h2 style="color:rgb(53, 181, 88);">
+				<i class="icon-course-curr"></i>
+				课程库
+			</h2>
+		</li>
+		<li class="menu" id="menu1">
+			<a href="#">移动开发</a>
+		</li>
+		<li class="menu" id="menu2">
+			<a href="#">前端开发</a>
+		</li>
+		<li class="menu" id="menu3">
+			<a href="#">后端开发</a>
+		</li>
+		<li class="menu" id="menu4">
+			<a href="#">基础知识</a>
+		</li>
+		<li class="menu" id="menu5">
+			<a href="#">云计算&大数据</a>
+		</li>
+		<li class="menu" id="menu6">
+			<a href="#">智能硬件&物联网</a>
+		</li>
+		<li class="menu" id="menu7">
+			<a href="#">数据库</a>
+		</li>
+		<li class="menu" id="menu8">
+			<a href="#">认证考试</a>
+		</li>
+		<li class="menu" id="menu9">
+			<a href="#">企业IT</a>
+		</li>
+		<li class="menu" id="menu10">
+			<a href="#">设计&产品&测试</a>
+		</li>
+	</ul>
+	<ul class="hdlist">
+		<li>
+			<a href="http://ke.jikexueyuan.com/zhiye/">
+				<i class="icon-zylj"></i>
+				职业路径图
+			</a>
+		</li>
+		<li>
+			<a href="http://www.jikexueyuan.com/path/">
+				<i class="icon-zstx"></i>
+				知识体系图
+			</a>
+		</li>
+		<li>
+			<a href="http://ke.jikexueyuan.com/xilie/">
+				<i class="icon-xlkc"></i>
+				系列课程
+			</a>
+		</li>
+		<li>
+			<a href="http://www.jikexueyuan.com/tag/">
+				<i class="icon-kcbq"></i>
+				课程标签
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="list-show" style="width: 402px; top: 109px;margin-left:-40px">
+	<div style="width: 400px;">
+		<dl>
+			<dt>
+				<a href="http://www.jikexueyuan.com/course/app/" cgid="58">应用开发</a>
+			</dt>
+			<dd class="cf">
+
+				<a href="http://www.jikexueyuan.com/course/android/" cgid="59">Android</a>
+
+				<a href="http://www.jikexueyuan.com/course/ios/" cgid="60">iOS</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<a href="http://www.jikexueyuan.com/course/games/" cgid="13">游戏开发</a>
+			</dt>
+			<dd class="cf">
+				<a href="http://www.jikexueyuan.com/course/cocos/" cgid="63">Cocos</a>
+				<a href="http://www.jikexueyuan.com/course/unity3d/" cgid="64">Unity3D</a>
+				<a href="http://www.jikexueyuan.com/course/spritekit2d/" cgid="65">SpriteKit 2D</a>
+				<a href="http://www.jikexueyuan.com/course/unreal/" cgid="66">Unreal</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<a href="http://www.jikexueyuan.com/course/frame/" cgid="14">常用框架</a>
+			</dt>
+			<dd class="cf">
+				<a href="http://www.jikexueyuan.com/course/cordova/" cgid="68">Cordova</a>
+				<a href="http://www.jikexueyuan.com/course/reactnative1/" cgid="382">React Native</a>
+			</dd>
+		</dl>
+	</div>
+</div>
+<div class="box">
+	<ul class="box-ul">
+		<li class="box-ull">全部课程</li>
+		<li class="box-ull" id="box-ull1">
+			最新
+			<i class="arrow-icon" id="arrow-icon3" ></i>
+		</li>
+		<li class="box-ull" id="box-ull2">
+			课程类型
+			<i class="arrow-icon" id="arrow-icon3" ></i>
+		</li>
+		<li class="box-ull" id="box-ull3">
+			内容类型
+			<i class="arrow-icon" id="arrow-icon3" ></i>
+		</li>
+		<li class="box-ull" id="box-ull4">
+			难度等级
+			<i class="arrow-icon" id="arrow-icon3" ></i>
+		</li>
+	</ul>
+	<div class="list-box">
+		<ul class="list">
+			<li class="list-1" id="list-1" style="background-position: 0px -26px"></li>
+			<li class="list-2" id="list-2" style="background-position: -30px -26px"></li>
+		</ul>
+	</div>
+	<div class="list-box-li">
+		<ul>
+			<li>最新</li>
+			<li>最新</li>
+			<li>最热</li>
+		</ul>
+	</div>
+	<div class="list-box-li1">
+		<ul>
+			<li>课程类型</li>
+			<li>VIP</li>
+			<li>免费</li>
+			<li>认证专享</li>
+			<li>全部</li>
+		</ul>
+	</div>
+	<div class="list-box-li2">
+		<ul>
+			<li>内容类型</li>
+			<li>知识精讲</li>
+			<li>项目实战</li>
+			<li>全部</li>
+		</ul>
+	</div>
+	<div class="list-box-li3">
+		<ul>
+			<li>难度等级</li>
+			<li>初级</li>
+			<li>中级</li>
+			<li>高级</li>
+			<li>全部</li>
+		</ul>
+	</div>
+	<div class="change">
+		<ul class="changelist">
+			<li  id="list-a" class="list-1-o" >
+				<div class="lesson-info">
+					<img src="./images/container.jpg" style="width: 240px">
+					<span>LeMaker Guitar 官方 LeMuntu 系统体验</span>
+					<p   class="p1" style="height: 0px; opacity: 0; display: none;">
+						本课程主要介绍 LeMaker Guitar 官方的 Linux 操作系统 LeMuntu 该如何使用，以及如何配置主要的接口，为后期更深入的 Linux 系统开发和学习奠定基础。
+						<br> <em>4课时
+                        9分钟</em>  <em style="margin:30px;">2947人学习</em>
+						<br>
+						<em>初级</em>
+					</p>
+					<div class="timeandicon">
+						<div class="cf">
+							<dl>
+								<dd class="mar-b8">
+									<i class="time-icon"></i>
+									<em>4课时
+							9分钟</em> 
+								</dd>
+								<dd class="zhongji" style="display: none;">
+									<i class="xinhao-icon"></i>
+									<em>初级</em>
+								</dd>
+
+							</dl>
+							<em class="learn-number" style="display: none;">2947人学习</em>
+						</div>
+						<div class="cf">
+							<div class="lessonicon-box" style="bottom: 4px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-b">
+				<div class="lesson-info">
+					<img src="./images/container2.jpg" style="width: 240px">
+					<span>环境搭建</span>
+					<p class="p2" style="height: 0px; opacity: 0; display: none;background-color:white;">
+						本课程主要介绍 LeMaker Guitar 官方的 Linux 操作系统 LeMuntu 该如何使用，以及如何配置主要的接口，为后期更深入的 Linux 系统开发和学习奠定基础。
+						<br>
+						<em>
+							4课时
+                        9分钟
+						</em>
+						<em style="margin:30px;">2947人学习</em>
+						<br>
+						<em>初级</em>
+					</p>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-c">
+				<div class="lesson-info">
+					<img src="./images/p3.jpg" style="width: 240px">
+					<span>环境搭建</span>
+					<p class="p3" style="height: 0px; opacity: 0; display: none;background-color:white;">
+						本课程主要介绍 LeMaker Guitar 官方的 Linux 操作系统 LeMuntu 该如何使用，以及如何配置主要的接口，为后期更深入的 Linux 系统开发和学习奠定基础。
+						<br>
+						<em>
+							4课时
+                        9分钟
+						</em>
+						<em style="margin:30px;">2947人学习</em>
+						<br>
+						<em>初级</em>
+					</p>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-d">
+				<div class="lesson-info">
+					<img src="./images/p4.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-e" >
+				<div class="lesson-info">
+					<img src="./images/p5.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-f">
+				<div class="lesson-info">
+					<img src="./images/p6.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="changelist2">
+			<li class="list-1-o" id="list-h">
+				<div class="lesson-info">
+					<img src="./images/p7.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+
+			<li class="list-1-o" id="list-i">
+				<div class="lesson-info">
+					<img src="./images/p8.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+			<li class="list-1-o" id="list-j">
+				<div class="lesson-info">
+					<img src="./images/p9.jpg" style="width: 240px">
+					<span>环境搭建</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!--翻页-->
+<div id="page-nav">
+	<ul class="pages">
+		<li class="pgNext pgEmpty">首页</li>
+		<li class="pgNext pgEmpty">上一页</li>
+		<li class="page-number pgCurrent">1</li>
+		<li class="page-number">2</li>
+		<li class="page-number">3</li>
+		<li class="page-number">4</li>
+		<li class="page-number">5</li>
+		<li class="page-number">6</li>
+		<li class="page-number">7</li>
+		<li class="thpoint">...</li>
+		<li class="pgNext">下一页</li>
+		<li class="pgNext">末页</li>
+		<li class="thpoint pagetotal" style="margin-top:3px;">共 94 页</li>
+		<li class="thpoint pagenow">
+			当前
+			<input type="text" value="1" maxlength="6" id="gotoval" style="width:20px; height:16px;margin-top:-3px;padding-top:2px;padding-left:10px;">页</li>
+		<li class="pgNext go">确定</li>
+	</ul>
+</div>
+<!--底部-->
+<div id="footer" class="mar-t50">
+	<link rel="stylesheet" href="http://e.jikexueyuan.com/headerandfooter/css/footer.css?t=1470738863000">
+	<div class=" jkinfor-block">
+		<div class="jkinfor cf">
+			<div class="jk-logo">
+				<img src="http://e.jikexueyuan.com/headerandfooter/images/jk-logo-footer.png">
+				<p>极客学院，编程是一种信仰！</p>
+			</div>
+			<dl>
+				<dt>职业学院</dt>
+				<dd>
+					<a target="_blank" href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a>
+				</dd>
+				<dd>
+					<a target="_blank" href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a>
+				</dd>
+				<dd>
+					<a target="_blank" href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a>
+				</dd>
+				<!--<dd>
+				<a target="_blank" href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_in">Android学院</a>
+			</dd>
+			-->
+			<dd>
+				<a target="_blank" href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>会员课程</dt>
+			<dd>
+				<a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://www.jikexueyuan.com/tag/">课程标签</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>极客社区</dt>
+			<dd>
+				<a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://wiki.jikexueyuan.com/">Wiki</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://download.jikexueyuan.com/">资源下载</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://qun.jikexueyuan.com/">社群</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>其他</dt>
+			<dd>
+				<a target="_blank" href="http://help.jikexueyuan.com/">关于我们</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://help.jikexueyuan.com/guide/">使用指南</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://help.jikexueyuan.com/join.html">加入我们</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://help.jikexueyuan.com/contact.html">联系我们</a>
+			</dd>
+			<dd>
+				<a target="_blank" href="http://www.jikexueyuan.com/friendlink.html">友情链接</a>
+			</dd>
+		</dl>
+
+		<div class="jk-down">
+			<p class="hot-tel">服务热线:400-678-8266</p>
+			<div class="downCon down-ios">
+				<img src="http://e.jikexueyuan.com/headerandfooter/images/app.png" class="twoCode" alt="下载二维码">iPhone</div>
+			<div class="downCon down-and">
+				<img src="http://e.jikexueyuan.com/headerandfooter/images/app.png" class="twoCode" alt="下载二维码">Android</div>
+		</div>
+	</div>
+
+</div>
+<div class="w-1000 copyright">
+	Copyright © 2013-2016&nbsp; <strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> 
+	All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210
+	<a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+	<a href="http://weibo.com/jikexueyuan" target="_blank" class="down-sina"></a>
+</div>
+</div>
+</body>
+</html>

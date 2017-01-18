@@ -1,0 +1,4 @@
+我的系统设置是前台新闻是webnews.html点击推荐、百家和本地分别请求index.php对应表news、local.php对应表news2和families.php对应表news3个新闻页。
+后台设置了登录系统entry.php。账号：admin和密码：123就进入news.html新闻后台。针对后台的js是backstage.js
+数据库是xampp.里面针对的表只有是登陆验证的login、还有主要增删改的表是news.
+增删改是php是delete.php、curnews.php、getnews.php、insert.php、update.php.

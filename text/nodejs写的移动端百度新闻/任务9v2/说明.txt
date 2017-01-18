@@ -1,0 +1,5 @@
+数据库名：xampp 
+用的表名：news
+前台新闻html路径：app\myapp\public\index.html
+后台新闻html路径：app\myapp\public\admin.html
+前台新闻只设置了前三个页签切换

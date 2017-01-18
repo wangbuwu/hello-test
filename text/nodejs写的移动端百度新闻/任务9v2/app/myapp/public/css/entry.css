@@ -1,0 +1,32 @@
+/*后台登录*/
+body{
+	background-image: url(../images/14.jpg); 
+	background-repeat: no-repeat;
+	}
+.box{
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	margin-left: 350px;
+	margin-top: 100px;
+	z-index: 100;
+	
+}
+.box table{
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 160px;
+	z-index: 101;
+}
+.text{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin-left: 105px;
+	margin-top: 162px;
+}
+.box .submit{
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 10px;
+}

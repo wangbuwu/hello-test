@@ -1,0 +1,872 @@
+@color: #F5F3F3;
+@nice: rgb(53, 181, 88);
+@the-border: 1px;
+@base-color: #111;
+@nice-color: #fff;
+@red: #842210;
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+.floata {
+    float: left;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lantinghei SC", "Microsoft Yahei", songti, Arial, Helvetica, sans-serif;
+    font-size: @the-border*14;
+    font-style: normal;
+}
+
+body {
+    background-color: @color;
+}
+
+li,
+ul,
+img,
+a,
+div {
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+div {
+    display: block;
+}
+
+.ue-bar {
+    background-color: white;
+    border-bottom: @the-border solid #D0C8C8;
+}
+
+.ue-bar-warp {
+    width: @the-border*980;
+    height: @the-border*70;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ue-bar-logo {
+    width: @the-border*134;
+    height: @the-border*50;
+    .floata;
+    padding-right: @the-border*10;
+    padding-top: @the-border*8;
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin-top: @the-border*12;
+    }
+}
+
+.ue-bar-nav {
+    height: @the-border*70;
+    .floata;
+    li {
+        height: @the-border*22;
+        line-height: @the-border*22;
+        padding: @the-border*26 @the-border*17;
+        cursor: pointer;
+        .floata;
+        margin-right: @the-border*20;
+    }
+}
+
+.ue-bar-nav li * {
+    color: #0A0A0A;
+    font-size: @the-border*14;
+    display: inline-block;
+    line-height: @the-border*23;
+    vertical-align: top;
+}
+
+.ue-bar-nav li:hover {
+    color: @nice;
+}
+
+.ue-bar-nav a:hover {
+    color: @nice;
+}
+
+.ue-bar-nav li i:hover {
+    border-top: @the-border solid @nice;
+    border-left: @the-border solid @nice;
+}
+
+.ue-bar-nav li i.arrow-icon {
+    margin-top: @the-border*8;
+}
+
+.ue-bar-nav li i {
+    margin-left: @the-border*5;
+}
+
+.border-radius (@radius: rotate(-135deg)) {
+    transform: @radius;
+    -webkit-transform: @radius;
+    -moz-transform: @radius;
+    -ms-transform: @radius;
+}
+
+.arrow-icon {
+    width: @the-border*8;
+    height: @the-border*8;
+    border-top: @the-border solid #c1c1c1;
+    border-left: @the-border solid #c1c1c1;
+    display: inline-block;
+    .border-radius;
+    transform-origin: @the-border*4 @the-border*4;
+}
+
+
+/*右边导航*/
+
+.icon-box {
+    float: right;
+    text-align: right;
+    width: @the-border*200;
+    margin-right: @the-border*10;
+    height: @the-border*60;
+    vertical-align: middle;
+    margin-top: @the-border*9;
+    span {
+        height: @the-border*60;
+        width: @the-border*17;
+        display: inline-block;
+        margin-left: @the-border*25;
+        cursor: pointer;
+    }
+    .app-icon {
+        background: url("../images/app-icon.png") 0 0 no-repeat;
+        background-size: @the-border*17;
+        background-position: 0;
+        .submenu {
+            padding: 0;
+            right: -50px;
+        }
+    }
+    .logged {
+        height: @the-border*60!important;
+        width: @the-border*25!important;
+        position: relative;
+    }
+    .logged img {
+        width: @the-border*25;
+        height: @the-border*25;
+        margin-top: @the-border*13;
+        display: block;
+        border-radius: 50%;
+        border: @the-border solid #ddd;
+        overflow: hidden;
+    }
+}
+
+.search-icon {
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+    background-size: @the-border*17 @the-border*17;
+    background-position: 0, 0;
+    height: @the-border*17;
+    width: @the-border*17;
+    display: inline-block;
+}
+
+.loginlist .submenu {
+    display: none;
+    opacity: 0;
+    padding: @the-border*10 0;
+    background: @nice-color;
+    position: absolute;
+    width: @the-border*120;
+    z-index: 1200;
+    top: @the-border*58;
+    right: -10px;
+}
+
+.icon-box .app-icon .submenu .top-icon {
+    right: @the-border*50;
+}
+
+.icon-box .app-icon .submenu img {
+    width: 100%;
+}
+
+img {
+    border: 0;
+}
+
+#uservip-icon {
+    background: url("../images/allicon2.png") 0 0 no-repeat;
+    background-size: @the-border*64 @the-border*64;
+    width: @the-border*13;
+    height: @the-border*13;
+    margin-right: @the-border*10;
+    display: inline-block;
+    position: absolute;
+    top: @the-border*28;
+    left: @the-border*15;
+    background-position: -1px -32px;
+}
+
+
+/*导航显示菜单*/
+
+.submenu {
+    opacity: 15;
+    position: absolute;
+    z-index: 1000;
+    top: @the-border*61;
+    left: @the-border*406;
+    background: @nice-color;
+    font-size: @the-border*12;
+    color: @base-color*6;
+    width: @the-border*280;
+    h3 {
+        margin: @the-border*10 0;
+        padding: 0 @the-border*15;
+        background: #fafafa;
+        height: @the-border*28;
+        line-height: @the-border*28;
+        font-weight: 300;
+    }
+    a {
+        display: block;
+        height: @the-border*30;
+        line-height: @the-border*30;
+        padding: 0 @the-border*15;
+        color: #564F4F;
+    }
+}
+
+.school-list i {
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size: @the-border*64 @the-border*64;
+    width: @the-border*14;
+    height: @the-border*14;
+    display: inline-block;
+    margin-right: @the-border*10!important;
+    background-position: -15px -27px;
+}
+
+.submenuvip-lesson {
+    opacity: 15;
+    position: absolute;
+    z-index: 1000;
+    top: @the-border*71;
+    left: @the-border*591;
+    background: @nice-color;
+    font-size: @the-border*12;
+    color: @base-color*6;
+    width: @the-border*280;
+    padding: @the-border*10 0;
+    a {
+        display: block;
+        height: @the-border*40;
+        line-height: @the-border*40;
+        color: @base-color*6;
+        padding: 0 @the-border*15;
+        span {
+            color: #bbb;
+            float: right;
+        }
+    }
+}
+
+.submenuvip-lesson li i {
+    background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
+    background-size: @the-border*64 @the-border*64;
+    width: @the-border*14;
+    height: @the-border*14;
+    display: inline-block;
+    margin-right: @the-border*10!important;
+    margin-left: @the-border*5;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal;
+}
+
+.submenuvip-lesson3 {
+    opacity: 15;
+    position: absolute;
+    z-index: 1000;
+    top: @the-border*71;
+    left: @the-border*731;
+    background: @nice-color;
+    font-size: @the-border*12;
+    color: @base-color*6;
+    width: @the-border*280;
+    padding: @the-border*10 0;
+    a {
+        display: block;
+        height: @the-border*40;
+        line-height: @the-border*40;
+        color: @base-color*6;
+        margin-left: @the-border*39;
+        span {
+            color: #bbb;
+            float: right;
+        }
+    }
+}
+
+.submenuvip-lesson3 li i {
+    background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
+    background-size: @the-border*64 @the-border*64;
+    width: @the-border*14;
+    height: @the-border*14;
+    display: inline-block;
+    margin-right: @the-border*10!important;
+    margin-left: @the-border*5;
+}
+
+
+/*垂直导航*/
+
+.adminMenuWarp {
+    .floata;
+    width: @the-border*204;
+    background-color: white;
+    margin-top: @the-border*20;
+    border: @the-border solid @nice;
+    height: @the-border*438;
+    z-index: 2;
+    &:hover {
+        border-right: @the-border solid #E4E4E4;
+    }
+    li {
+        border-bottom: @the-border solid #F5F3F3;
+        z-index: 1;
+    }
+}
+
+.adminmenu {
+    clear: left;
+    margin: @the-border*12 @the-border*8;
+    list-style: none;
+    width: @the-border*160;
+    background-color: white;
+}
+
+.menu {
+    width: @the-border*195;
+    min-height: @the-border*34;
+    cursor: pointer;
+    a {
+        padding: @the-border*9 0;
+        display: block;
+        color: #676161;
+        text-decoration: none;
+        text-indent: @the-border*40;
+        &:hover {
+            color: @nice;
+            background-color: @nice-color;
+            margin-left: -10px;
+            box-shadow: @the-border @the-border*2 @the-border*4 rgba(0, 0, 0, .1);
+            z-index: 400;
+        }
+    }
+    h2 {
+        margin-left: @the-border*40;
+    }
+}
+
+.icon-course-curr {
+    display: block;
+    width: @the-border*15;
+    height: @the-border*15;
+    background: url(http://s1.jikexueyuan.com/common/images/icon-course-curr_0743c98.png) no-repeat 0 0 / @the-border*15 @the-border*15;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.shadow {
+    -webkit-box-shadow: @the-border*2 @the-border*2 @the-border*4 rgba(0, 0, 0, .1);
+    -moz-box-shadow: @the-border*2 @the-border*2 @the-border*4 rgba(0, 0, 0, .1);
+    box-shadow: @the-border* @the-border*2 @the-border*4 rgba(0, 0, 0, .1);
+}
+
+.list-show {
+    .shadow;
+    overflow: hidden;
+    min-height: @the-border*407;
+    min-width: @the-border*401;
+    background: @nice-color;
+    position: absolute;
+    left: @the-border*427;
+    top: -46px;
+    z-index: 110;
+    list-style: none;
+    margin-left: -1px;
+    padding-bottom: @the-border*30;
+    .floata;
+    width: @the-border*591;
+    dl {
+        margin: 0 @the-border*15;
+        overflow: hidden;
+    }
+    dt {
+        display: block;
+        border-bottom: @the-border solid #f5f5f5;
+        height: @the-border*37;
+        line-height: @the-border*45;
+    }
+}
+
+.list-show dt>a {
+    color: @base-color*3;
+    font-size: @the-border*13;
+    font-weight: 500;
+}
+
+a {
+    color: @base-color*3;
+}
+
+a:hover {
+    color: @nice;
+}
+
+
+/*内容切换*/
+
+.box {
+    width: @the-border*797;
+    height: auto;
+    margin: @the-border*20 auto;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.list-box {
+    margin: 0 auto;
+    width: @the-border*748;
+    height: @the-border*42;
+    background-color: white;
+    margin-left: @the-border*121;
+}
+
+.list {
+    float: right;
+    padding-top: @the-border*10;
+    margin-right: @the-border*10;
+}
+
+.list-box ul li {
+    cursor: pointer;
+    width: @the-border*30;
+    height: @the-border*26;
+    .floata;
+    display: block;
+    background: url("../images/listype-icon.png") no-repeat;
+}
+
+.changelist {
+    width: @the-border*870;
+    height: @the-border*1000;
+    margin-top: @the-border*13;
+    margin-left: @the-border*2;
+    .list-1-o {
+        height: @the-border*225;
+        width: @the-border*242;
+        .floata;
+        margin-left: @the-border*11;
+        margin-bottom: @the-border*12;
+        border: @the-border solid #E0E0E0;
+        background-color: white;
+    }
+    .list-2-v {
+        width: @the-border*240;
+        height: @the-border*170;
+        margin-left: @the-border*120;
+    }
+}
+
+.box-ul {
+    position: absolute;
+    text-align: center;
+    margin-left: @the-border*100;
+    i {
+        margin-left: @the-border*6;
+    }
+}
+
+.box-ull {
+    .floata;
+    margin-left: @the-border*47;
+    margin-top: @the-border*14;
+    cursor: pointer;
+    color: #969292;
+    font-size: @the-border*10;
+}
+
+.list-box-li {
+    position: absolute;
+    width: @the-border*78;
+    height: @the-border*112;
+    background-color: #FAFAFA;
+    margin-left: @the-border*213;
+    top: @the-border*92;
+    text-align: center;
+    ul {
+        .floata;
+    }
+    li {
+        margin-top: @the-border*12;
+        margin-left: @the-border*23;
+        cursor: pointer;
+        color: #8C8888;
+        &:hover {
+            color: @nice;
+        }
+    }
+}
+
+.list-box-li1 {
+    position: absolute;
+    width: @the-border*101;
+    height: @the-border*171;
+    background-color: #FAFAFA;
+    margin-left: @the-border*325;
+    top: @the-border*92;
+    text-align: center;
+    ul {
+        .floata;
+    }
+    li {
+        margin-top: @the-border*12;
+        margin-left: @the-border*23;
+        cursor: pointer;
+        color: #8C8888;
+        &:hover {
+            color: @nice;
+        }
+    }
+}
+
+.list-box-li2 {
+    position: absolute;
+    width: @the-border*101;
+    height: @the-border*140;
+    background-color: #FAFAFA;
+    margin-left: @the-border*438;
+    top: @the-border*92;
+    text-align: center;
+    ul {
+        .floata;
+    }
+    li {
+        margin-top: @the-border*12;
+        margin-left: @the-border*23;
+        cursor: pointer;
+        color: #8C8888;
+        &:hover {
+            color: @nice;
+        }
+    }
+}
+
+.list-box-li3 {
+    position: absolute;
+    width: @the-border*102;
+    height: @the-border*173;
+    background-color: #FAFAFA;
+    margin-left: @the-border*546;
+    top: @the-border*92;
+    text-align: center;
+    ul {
+        .floata;
+    }
+    li {
+        margin-top: @the-border*12;
+        margin-left: @the-border*23;
+        cursor: pointer;
+        color: #8C8888;
+        &:hover {
+            color: @nice;
+        }
+    }
+}
+
+.changelist2 {
+    width: @the-border*866;
+    height: @the-border*1000;
+    margin-top: -526px;
+    margin-left: @the-border*113;
+    .list-1-o {
+        height: @the-border*240;
+        width: @the-border*240;
+        .floata;
+        margin-left: @the-border*11;
+        margin-bottom: @the-border*20;
+        border: @the-border solid #E0E0E0;
+    }
+    .list-2-v {
+        width: @the-border*240;
+        position: relative;
+        height: @the-border*170;
+        margin-left: @the-border*13;
+        top: @the-border*515;
+    }
+}
+
+.hdlist {
+    width: 100%;
+    background-color: @nice-color;
+    margin-top: -11px;
+    li {
+        height: @the-border*45;
+    }
+    a {
+        display: block;
+        height: @the-border*45;
+        width: 100%;
+        line-height: @the-border*45;
+        color: @base-color*3;
+        font-size: @the-border*14;
+        padding-left: @the-border*10;
+        border-bottom: @the-border solid #eee;
+        &:hover {
+            color: @nice;
+        }
+        .icon-zylj {
+            background: url(http://s1.jikexueyuan.com/common/images/icon-zylj_6ee6dac.png) no-repeat left center;
+            background-size: @the-border*15 @the-border*14;
+            i {
+                display: inline-block;
+                width: @the-border*15;
+                height: @the-border*15;
+                margin-right: @the-border*8;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*翻页*/
+
+#page-nav {
+    text-align: center;
+    height: @the-border*28;
+    margin-left: @the-border*227;
+    input {
+        width: @the-border*35!important;
+        height: @the-border*22!important;
+        background: @nice-color;
+        border: @the-border solid #e4e4e4;
+        color: @base-color*6;
+        line-height: @the-border*22;
+        margin: 0 @the-border*10;
+        vertical-align: middle;
+    }
+}
+
+ul.pages {
+    display: block;
+    border: 0;
+    text-transform: uppercase;
+    font-size: @the-border*12;
+    margin: @the-border*10 @the-border*10 @the-border*45;
+    padding: 0;
+    li {
+        display: inline-block;
+        width: @the-border*32;
+        height: @the-border*32;
+        border: 0;
+        margin-left: @the-border*5;
+        line-height: @the-border*30;
+        border: @the-border solid @nice-color;
+        text-align: center;
+        font-size: @the-border*12;
+        background: @nice-color;
+        color: gray;
+        border: @the-border solid #e4e4e4;
+    }
+}
+
+ul.pages li.pgNext {
+    width: @the-border*50;
+}
+
+ul.pages li.pgEmpty {
+    border: @the-border solid #f0f0f0;
+    /* color: #d9d6c3; */
+    width: @the-border*50;
+    cursor: default;
+}
+
+ul.pages li:nth-child(2) {
+    width: @the-border*72;
+}
+
+ul.pages li.pgCurrent {
+    background: #35b558;
+    color: @nice-color;
+    border: @the-border solid #35B558;
+}
+
+ul.pages li.pagetotal {
+    width: @the-border*70;
+}
+
+ul.pages li.thpoint {
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: @the-border*3;
+}
+
+ul.pages li.pagenow {
+    width: @the-border*100;
+}
+
+ul.pages li.go {
+    width: @the-border*32;
+    height: @the-border*22;
+    line-height: @the-border*22;
+    margin-top: @the-border*6;
+}
+
+
+/*内容显示*/
+
+.pcontener {
+    position: absolute;
+    color: gray;
+    font-size: @the-border*12;
+    line-height: @the-border*18;
+    height: 0;
+    opacity: 0;
+    margin-bottom: @the-border*10;
+    display: none;
+    width: @the-border*240;
+    z-index: 2000;
+    background-color: white;
+    overflow: hidden;
+}
+
+.p1 {
+    .pcontener
+}
+
+.p2 {
+    .pcontener
+}
+
+.p3 {
+    .pcontener
+}
+
+.list-2-v span {
+    position: absolute;
+    margin-left: @the-border*300;
+    margin-top: -100px;
+}
+
+.list-1-0 .lesson-infor .timeandicon {
+    font-size: @the-border*12;
+    color: gray;
+    position: relative;
+    dl {
+        width: @the-border*120;
+        .floata;
+        white-space: nowrap;
+    }
+}
+
+.timeandicon {
+    font-size: @the-border*12;
+    color: gray;
+    position: relative;
+    .time-icon {
+        background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -72px no-repeat;
+        width: @the-border*14;
+        height: @the-border*14;
+        display: block;
+        .floata;
+        margin-right: @the-border*4;
+        margin-top: @the-border*3;
+    }
+}
+
+.cf {
+    zoom: 1;
+}
+
+.list-1-0 .lesson-infor .timeandicon dl dd {
+    font-size: @the-border*12;
+}
+
+.timeandicon dl dd {
+    font-size: @the-border*12;
+    .floata;
+    display: inline-block;
+    margin-right: @the-border*15;
+    margin-top: @the-border*10;
+}
+
+.mar-b8 {
+    margin-bottom: @the-border*8;
+}
+
+.list-1-0 .lesson-infor .timeandicon .time-icon {
+    background: url(http://s1.jikexueyuan.com/common/images/clok_a413ecf.png) 0 0 no-repeat;
+    width: @the-border*14;
+    height: @the-border*14;
+    display: block;
+    .floata;
+    margin-right: @the-border*8;
+    background-size: @the-border*14 @the-border*14;
+}
+
+
+/*底部*/
+
+#footer {
+    min-width: @the-border*1000;
+    border-top: @the-border solid #e4e4e4;
+    background: @nice-color;
+    .jkinfor-block {
+        background: @nice-color;
+    }
+}
+
+.mar-t50 {
+    margin-top: @the-border*50!important;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo {
+    position: absolute;
+    left: 0;
+    top: @the-border*25;
+    display: inline-block;
+    width: @the-border*160;
+}

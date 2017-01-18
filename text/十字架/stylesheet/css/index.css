@@ -1,0 +1,74 @@
+      
+       
+ /*con总高度320，需要上移160px*/   
+.con{
+	 width: 100px;
+     height:320px;
+     position: absolute;
+     top:50%;
+     left: 50%;
+     margin-top: -160px;
+     margin-left: -50px;
+    
+     }
+.one{
+	 width: 100px;
+	 height: 100px;
+	 background-color:#CA8393;
+     position: relative;
+     top:120px;
+     border: 1px solid #000;
+     -webkit-box-shadow:2px 2px 2px #000 ;
+     }
+.five{
+   
+     height: 100px;
+     width: 100px;
+     background-color: #D21D47;
+     border: 1px solid #000;       
+     -webkit-box-shadow:2px 2px 2px #000 ;         
+	 }
+	 /*flex总长度320，需要前移160px*/      
+.flex{
+     display: -webkit-flex;
+     width: 320px;
+     height:100px;
+     position: absolute;
+     top:50%;
+     left: 50%;
+     margin-left: -160px;
+     margin-top: -50px;
+
+     }
+.two{
+    -webkit-flex:1;
+    height: 100px;
+    background-color: yellow;
+    margin-right: 10px;
+    border: 1px solid #000;
+    -webkit-box-shadow:2px 2px 2px #000 ;   	      
+             
+	 }
+.three{
+     -webkit-flex:1;
+     height: 100px;
+     background-color: #147D52;
+     border: 1px solid #000;	      
+     -webkit-box-shadow:2px 2px 2px #000 ;
+	 }
+.four{
+     -webkit-flex:1;
+     height: 100px;
+     background-color: #16147D;
+     margin-left: 10px;  	      
+     border: 1px solid #000; 
+     -webkit-box-shadow:2px 2px 2px #000 ;     
+	 }
+/*panda宽度24所以边距只剩38*/    
+.panda{
+	 width: 24px;
+	 height: 24px;
+	 display: table-cell;
+	 margin:auto;
+	 margin-top: 38px;
+     }

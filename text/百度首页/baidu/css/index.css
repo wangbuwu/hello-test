@@ -1,0 +1,540 @@
+body {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+
+/*上拉弹出窗口*/
+
+.scrollTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1639px;
+    height: 90px;
+    background: white;
+    border: 1px solid #D8D1D1;
+    z-index: 2;
+}
+
+.scrollTop img {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 241px
+}
+
+.top {
+    position: absolute;
+    width: 1339px;
+    height: 1px;
+    margin-top: -90px;
+    margin-left: -10px;
+    background-color: #CCC1C1;
+    opacity: 0.4;
+}
+
+#weather2 a {
+    font-size: 15px;
+    color: #403C3C;
+}
+
+#ig {
+    text-align: : center;
+    margin-top: 120px;
+}
+
+.img {
+    width: 270px;
+    height: 129px;
+    margin-left: 550px;
+    margin-top: -100px;
+}
+
+.box {
+    width: 540px;
+    height: 36px;
+    position: absolute;
+    margin-left: 384px;
+    outline-style: none;
+    border: 1px solid #ccc;
+}
+
+
+/*百度按钮*/
+
+.button {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    margin-left: 926px;
+    background-color: #2d78f4;
+    border: solid #2d78f4;
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.form1 {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-box-align;
+    margin-top: 26px;
+}
+
+.ui {
+    position: absolute;
+    width: 445px;
+    overflow: hidden;
+    float: right;
+    margin-top: -133px;
+    margin-left: 766px;
+    display: block;
+}
+
+.ui1 {
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+    margin-left: 12px;
+}
+
+.ui2 {
+    font-size: 13px;
+    color: #333;
+    margin-left: 11px;
+}
+
+.title {
+    display: block;
+    float: right;
+    margin-top: -76px;
+    font-size: 13px;
+    margin-right: 10px;
+    background-color: #2d78f4;
+    color: white;
+    border: solid #2d78f4 5px;
+}
+
+.MenuList {
+    width: 87px;
+    height: 105%;
+    display: none;
+    background-color: white;
+    color: white;
+    position: absolute;
+    margin-left: 1237px;
+    border: solid #F1EAEA;
+    margin-top: -164px;
+}
+
+.sn {
+    width: 64px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    border: 10px solid #2d78f4;
+    background-color: #2d78f4;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin-top: -124px;
+    margin-left: 1245px;
+    text-decoration: none;
+}
+
+.a2 {
+    color: #333;
+    margin-left: -29px;
+    margin-top: -20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.a2 img {
+    margin-top: -8px;
+    width: 58px;
+    height: 38px;
+}
+
+.span {
+    margin-left: -13px;
+}
+
+.MenuList li {
+    margin-top: 11px;
+}
+
+.li1 {
+    margin-top: -10px;
+}
+
+.lg7 {
+    display: block;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 891px;
+}
+
+.container {
+    width: 880px;
+    height: 345px;
+    margin-top: 177px;
+    margin-left: 259px;
+    background-color: white;
+    border: 1px solid #DCD1D1;
+    opacity: 0.6;
+}
+
+.Navigation {
+    width: 880px;
+    height: 40px;
+    background-color: rgba(235, 243, 240, 0);
+    margin-top: -42px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #DCD1D1;
+}
+
+.mine-text {
+    margin-top: -16px;
+    margin-left: 4px;
+}
+
+.mine-text1 {
+    cursor: pointer;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+    list-style-type: none;
+    background-color: white;
+}
+
+
+/*导航*/
+
+.page1 {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -40px;
+}
+
+.page2 {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.page3 {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.page4 {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.page5 {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.page6 {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.page7 {
+    width: 82px;
+    height: 40px;
+    background-color: white;
+    margin-top: -16px;
+    margin-left: -2px;
+}
+
+.divOver {
+    background-color: rgba(118, 120, 123, 0.95);
+    color: white;
+}
+
+.first {
+    background-color: red;
+}
+
+
+/*不同导航内容*/
+
+#myDiv1 {
+    width: 838px;
+    height: 400px;
+    background: url() no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#myDiv2 {
+    width: 882px;
+    height: 600px;
+    background: url() no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#myDiv02 span {
+    display: block;
+    position: absolute;
+    margin-left: 330px;
+    font-size: 10px;
+}
+
+#myDiv02 img {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+#myDiv02 a {
+    display: block;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 230px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #171616;
+}
+
+#myDiv03 span {
+    display: block;
+    position: absolute;
+    margin-left: 330px;
+    font-size: 10px;
+    margin-top: 300px;
+}
+
+#myDiv03 img {
+    display: block;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+#myDiv03 a {
+    display: block;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 230px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #171616;
+}
+
+#myDiv3 {
+    width: 882px;
+    height: 400px;
+    background: url() no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#myDiv3 span {
+    float: left;
+}
+
+#myDiv3 ul {
+    list-style: none;
+    float: left;
+}
+
+#myDiv3 li {
+    margin-top: 52px;
+    margin-right: 17px;
+}
+
+#myDiv4 {
+    width: 882px;
+    height: 400px;
+    background: url(../img/pg05.jpg?__sprite) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#myDiv5 {
+    width: 882px;
+    height: 400px;
+    background: url(../img/pg8.jpg?__sprite) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#myDiv6 {
+    width: 882px;
+    height: 400px;
+    background: url(../img/pg9.jpg?__sprite) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.minetext {
+    list-style-type: none;
+}
+
+.minetext a {
+    text-decoration: none;
+    color: #3A3838;
+}
+
+.minetext hr {
+    border: 1px solid #F1EAEA;
+}
+
+
+/*天气css样式*/
+
+#weather {
+    position: absolute;
+    margin-top: -115px;
+}
+
+#weather2 {
+    width: 200px;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: 250px;
+}
+
+.background-color {
+    width: 1425px;
+    height: 175px;
+    position: absolute;
+    margin-top: -134px;
+    margin-left: -10px;
+    background-color: #ECDDDD;
+}
+
+.background-color img {
+    width: 100px;
+    height: 100px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+.background-color li {
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.background-color ul {
+    width: 500px;
+    height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    line-height: 46px;
+}
+
+.bgpg {
+    width: 676px;
+    height: 103px;
+    margin-left: 433px;
+}
+
+.background-color span {
+    display: block;
+    position: absolute;
+    width: 43px;
+    height: 49px;
+    background-color: #4B9BFF;
+    color: white;
+}
+
+.white {
+    position: absolute;
+    margin-top: -46px;
+}
+
+.no {
+    position: absolute;
+    margin-top: -46px;
+    margin-left: 88px;
+}
+
+.buttom2 {
+    margin-left: -94px;
+    font-size: 13px;
+    color: #333;
+}
+
+.ul {
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -2px;
+}
+
+.buttom3 {
+    position: absolute;
+    margin-left: 553px;
+    margin-top: 47px;
+    font-size: 13px;
+}
+
+.v1 {
+    color: #333;
+}
+
+
+/*a:hover {
+	color:#3A81F5;
+	}*/
+
+input:focus {
+    border: solid 1px;
+    border-color: #3A81F5;
+}
+
+input:first-child:hover {
+    background-color: #3A81F5;
+}

@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0rem;
+}
+.go-top-trigger {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    z-index: 10;
+    right: 13px;
+    bottom: 143px;
+    position: fixed;
+    background: url(/static/news/webappreact/imgs/go-top_b1fff84.png) no-repeat;
+    background-size: 52px auto;
+    -webkit-background-size: 52px auto;
+    background-position: right center;
+}
+.feedback-trigger {
+    width: 52px;
+    height: 52px;
+    background: url(/static/news/webappreact/imgs/feed-back_0b5120b.png) no-repeat;
+    background-size: 52px auto;
+    -webkit-background-size: 52px auto;
+    background-position: right center;
+    cursor: pointer;
+    position: fixed;
+    right: 13px;
+    bottom: 80px;
+    z-index: 10;
+}
+.nav-header-container-logo {
+    background: #3e98f0 url(/static/news/webappreact/imgs/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+}
+.nav-header-container {
+    width: 100%;
+    height: 48px;
+    background-color: #3e98f0;
+    position: relative;
+    border-bottom: 1px solid #5dabf0;
+}
+.nav-header-container .baidu-icon {
+    background-position: center 6px;
+    margin-left: 8px;
+}
+.nav-header-container a {
+    width: 34px;
+    height: 100%;
+    background: url(/static/news/webappreact/imgs/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+body .float-left {
+    float: left;
+}
+body a {
+    text-decoration: none;
+}
+.nav-header-container .profile-icon {
+    background-position: center -461px;
+    margin-left: 10px;
+}
+.nav-header-container .subscribe-icon {
+    background-position: center -105px;
+    margin-right: 8px;
+}
+.nav-header-container .search-icon {
+    background-position: center -160px;
+    margin-right: 10px;
+}
+body .clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+#index_view_navigator {
+    background-color: #3e98f0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow: hidden;
+
+}
+#index_view_navigator ul {
+    list-style-type: none;
+    display: block;
+
+}
+#index_view_navigator ul li {
+    position: relative;
+    text-align: center;
+    float: left;
+    font-size: 1.16rem;
+    line-height: -0.5rem;
+}
+#index_view_navigator ul span {
+    color: #fff;
+    display: inline-block;
+    padding: 12px 0;
+}
+#index_view_navigator ul li b {
+    position: absolute;
+    top: 13px;
+    left: -1px;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+}
+#index_view_navigator ul .selected a:visited {
+    color: #fff;
+}
+.tabin{
+	 border-bottom: 2px solid #fff;
+
+   
+}
+
+#index_view_navigator ul a:visited {
+    color: #fff;
+}
+#index_view_navigator ul li a {
+    white-space: nowrap;
+}
+#index_view_navigator ul a {
+    color: #fff;
+    display: inline-block;
+    padding: 13px 0;
+
+}
+body a {
+    text-decoration: none;
+}
+.index-list-item .index-list-image {
+    font-size: 0;
+    vertical-align: middle;
+    width: 33.33%;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-left: 0;
+    background-color: #F4F7F9;
+    position: relative;
+}
+.index-list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 8.5px 0 10px;
+    margin: 0 17px;
+
+}
+.index-list-main.showleft {
+    display: flex;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-align: center;
+    box-align: center;
+    padding-bottom: 3px;
+    padding-top: 5.5px;
+}
+.img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+.ivideoplay {
+    display: none;
+    background: url(/static/news/webappreact/imgs/videoplay_1717b47.png) no-repeat;
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -14px 0 0 -14px;
+}
+.index-list-main.showleft .index-list-main-text {
+    width: 66.66%;
+    padding-left: 14px;
+    flex: 2;
+    box-sizing: border-box;
+}
+.index-list-item .index-list-main-text {
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+.span {
+    font-size: 1.18rem;
+    line-height: 1.26rem;
+    color: #333;
+    max-height: .56rem;
+    overflow: hidden;
+}
+.index-list-bottom {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+.index-list-item .index-list-main-time {
+    line-height: 17px;
+    height: 17px;
+}
+.index-list-item .index-list-main-time {
+    text-align: left;
+}
+.index-list-item .index-list-main-time {
+    font-size: 12px;
+    line-height: 22px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.index-list-main-time .tip-time {
+    display: inline-block;
+    color: #999;
+    font-size: .13rem;
+    margin-right: 5px;
+    font-weight: 400;
+}
+.index-list-item .tip-topnews, .index-list-item .tip-hot, .index-list-item .tip-recommend, .index-list-item .tip-topic {
+    display: inline;
+}
+.index-list-item .tip-fillred, .index-list-item .tip-fillblue, .index-list-item .tip-strokeblue {
+    border: 1px solid #efb9b9;
+    color: #ef3f41;
+}
+.index-list-item .tip-topnews, .index-list-item .tip-hot, .index-list-item .tip-tag, .index-list-item .tip-recommend, .index-list-item .tip-reason, .index-list-item .tip-contenttype, .index-list-item .tip-topic {
+    text-align: center;
+    font-size: .1rem;
+    font-weight: 400;
+    padding: 0 1px;
+    color: #999;
+    border-radius: 2px;
+    display: inline;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+strong, b {
+    font-weight: bold;
+}
+Inherited from div.index-list-main-time
+.index-list-item .index-list-main-time {
+    line-height: 17px;
+    height: 17px;
+}
+.index-list-item .index-list-main-time {
+    text-align: left;
+}
+.index-list-item .index-list-main-time {
+    font-size: 12px;
+    line-height: 22px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+/*輪播圖*/
+*{ 
+	padding:0; 
+	margin:0; 
+	list-style:none;
+}
+.banner{ 
+	margin:16px auto;
+   width:92%; 
+   height:255px; 
+   overflow:hidden; 
+   position:relative;
+   margin-top: 17px;
+   background-image: no-repeat;
+}
+.banner .img{ 
+	width:5000px; 
+	position:absolute; 
+	left:0px; 
+	top:0;
+}
+.banner .img li{ 
+	float:left;
+}
+
+.banner .num{ 
+	position:absolute; 
+	width:100%; bottom:10px; 
+	left:152px; 
+	text-align:center; 
+	font-size:0px;}
+.banner .num li{ 
+	width:10px;
+	height:10px; 
+	background:#888;
+	 border-radius:50%; 
+	 display:inline-block;
+	  margin:0 3px;
+	   cursor:pointer;}
+.banner .num li.on{ 
+	background:#F60;
+}
+
+.banner .btn{ 
+	width:30px; 
+	height:50px; 
+	background:rgba(0,0,0,0.5); 
+	position:absolute; top:50%; 
+	margin-top:-25px; 
+	cursor:pointer; 
+	text-align:center; 
+	line-height:50px; 
+	color:#fff; 
+	font-size:40px; 
+	font-family:"宋体"; 
+	display:none;
+}
+.banner:hover .btn{ 
+	display:block;
+}
+
+.banner .btn_l{ 
+	left:0;
+}
+.banner .btn_r{ 
+	right:0;
+}
+/*图片标题*/
+
+.optons-text {
+    padding: 0 10px;
+    text-align: left;
+    height: 28px;
+    font-size: .16rem;
+    color: #fff;
+    background-color: rgba(0,0,0,.4);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.optons-text span {
+    display: inline-block;
+    text-align: left;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    font-size: 20px;
+}
+/*首行图标*/
+.nav-header-container-logo {
+    background: #3e98f0 url(./images/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+}
+.nav-header-container {
+    width: 100%;
+    height: 48px;
+    background-color: #3e98f0;
+    position: relative;
+    border-bottom: 1px solid #5dabf0;
+}
+.nav-header-container .profile-icon {
+    background-position: center -461px;
+    margin-left: 10px;
+}
+.nav-header-container a {
+    width: 34px;
+    height: 100%;
+    background: url(./images/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+.nav-header-container .subscribe-icon {
+    background-position: center -105px;
+    margin-right: 8px;
+}
+.nav-header-container .search-icon {
+    background-position: center -160px;
+    margin-right: 10px;
+}
+body .float-right {
+    float: right;
+}

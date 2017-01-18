@@ -1,0 +1,131 @@
+.con{
+	display: -webkit-box;
+}
+.first{
+	   width: 100px;
+	   height: 100px;
+	   background-color: orange;
+}
+#second{
+	 width: 100px;
+	height: 100px;
+	background-color: aquamarine;
+}
+#three{
+	 width: 100px;
+	height: 100px;
+	background-color: #E3FF7F;
+}
+.col{
+	-webkit-column-count:3;
+	-moz-column-rule-style:inset;
+	-webkit-column-rule-style:inset;
+	column-rule-style:inset;
+
+}
+.cloumn{
+	    width: 500px;
+	    border: solid 1px;
+	    background-color: #DFDBE6;
+}    
+.con2{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+}   
+
+.con3{
+	display: -webkit-flex;
+	-webkit-box-direction:vertical;
+
+
+}
+.first3{
+	   -webkit-order:2;
+	   width: 100px;
+	   height: 100px;
+	   background-color: orange;
+}
+#second3{
+	-webkit-order:3;
+	width: 100px;
+	height: 100px;
+	background-color: aquamarine;
+}
+#three3{
+	-webkit-order:1;
+	width: 100px;
+	height: 100px;
+	background-color: #E3FF7F;
+}
+.fl{
+	display: block;
+	float: right;
+	margin-right: 900px;
+	margin-top: -300px;
+}
+.center{
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	height: 300px;
+	width: 300px;
+    background-color: orange;
+	float: right;
+	margin-right: 500px;
+	margin-top: -500px;	 
+}
+.cr{
+	height: 200px;
+	width: 200px;
+}
+.ct{
+	position: absolute;
+	margin-left: 750px;
+	margin-top:-200px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.daizi{
+    width: 130px;
+    height: 130px;
+    margin-top: -230px;
+    margin-left: 660px;
+}
+.xiezi{
+    width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+.xiehe{
+	margin: 100px;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	border:5px solid red;
+}
+
+
+
+.daizi1{
+    width: 130px;
+    height: 130px;
+    margin-top: -200px;
+    margin-left: 500px;
+}
+.xiezi1{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+.xiehe1{
+	margin: 100px;
+	padding: 10px;
+	width: 130px;
+	height: 130px;
+	background-color: aqua;
+	border:5px solid red;
+	box-sizing: border-box;
+}

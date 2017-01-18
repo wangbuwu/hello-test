@@ -1,0 +1,13 @@
+ table{
+ 	
+ 	background-color: #BAD4DA;
+ 	text-align: center;
+ }	
+  input{
+        width:60px;
+        height: 50px;
+    }
+    #inp1{
+        width:280px;
+        text-align:right;
+    }

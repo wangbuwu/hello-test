@@ -1,0 +1,114 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*主体内容*/
+.container{
+	position: relative;
+	background-image: url(../img/bg.png);
+	background-size: 100% 540px;
+	width: 100%;
+	cursor:pointer; border:0;
+	height: 540px; 
+}
+.logou9{
+	   margin: 5px;
+	   padding: 5px;
+	   margin-left: 15%;
+	 
+}
+/*登录窗*/
+.box{
+	position: relative;
+	width: 340px;
+	height: 370px;
+	background-color: white;
+	margin-left: 62%;
+	margin-top: 5%;
+	border-radius: 10px;
+	text-align: center;
+}
+#user{
+    font: bold 15px/35px 
+    "microsoft yahei";
+    color: #666666;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-bottom: 0%;
+}
+/*线条*/
+.line{
+	width: 250px;
+	border-bottom:1px solid #BBB7B7;
+	margin:auto;
+
+}
+.form-horizontal{
+	margin-left: 25px;
+	width: 336px;
+	margin-top: 20px;
+}
+select{
+	margin: 5px;
+}
+.btn-lg{
+
+	width: 250px;
+	margin-left: -45px;
+	height: 45px;
+	margin-top: 100px;
+}
+strong{
+	font-size: 20px;	
+}
+.longin{
+	position:absolute;
+	  width: 250px;
+    margin-top: -140px;
+    margin-left: 45px;
+}
+.longin1{
+	position: absolute;
+	margin-top: -135px;
+	margin-left: 90px;
+}
+.longi2{
+	position:absolute;
+    width: 250px;
+    margin-top: -100px;
+    margin-left: 45px;
+}
+.longin2{
+	position: absolute;
+	margin-top: -96px;
+	margin-left: 92px;
+}
+.otherInfo{
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 40px;
+}
+.otherInfo a {
+    margin:0 15px;
+    color: #767676;    
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.m-t-sm {
+	display: block;
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 20%;
+}
+ .m-l-sm {
+    margin-left: 10px;
+}
+.qr-code {
+    position: absolute;
+    top: 610px;
+    right: 17%;
+    border-left: 1px solid #e6e6e6;
+    padding-left: 40px;
+}
